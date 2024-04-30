@@ -1,0 +1,36 @@
+###
+GET http://localhost:3004/api/v1/portfolio
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzE0NTA1MTI4LCJleHAiOjE4MDA5MDUxMjh9.Mc6f_AwPBLRQDMLdByhzQKmbL2MXapF7DhUKYjSTpTI
+
+###
+GET http://localhost:3004/api/v1/portfolio/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzE0NTA1MTI4LCJleHAiOjE4MDA5MDUxMjh9.Mc6f_AwPBLRQDMLdByhzQKmbL2MXapF7DhUKYjSTpTI
+
+###
+POST http://localhost:3004/api/v1/portfolio
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzE0NTA1MTI4LCJleHAiOjE4MDA5MDUxMjh9.Mc6f_AwPBLRQDMLdByhzQKmbL2MXapF7DhUKYjSTpTI
+
+{
+  "crypto": "Bitcoin",
+	"ticker": "BTC",
+	"purchasePrice": 50000,
+	"amount": 1
+}
+
+###
+PUT  http://localhost:3004/api/v1/portfolio/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzE0NTA1MTI4LCJleHAiOjE4MDA5MDUxMjh9.Mc6f_AwPBLRQDMLdByhzQKmbL2MXapF7DhUKYjSTpTI
+
+{
+    "crypto": "Ethereum",
+    "ticker": "ETH",
+    "purchasePrice": 3000,
+    "amount": 2
+}
+
+###
+DELETE  http://localhost:3004/api/v1/portfolio/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzE0NTA1MTI4LCJleHAiOjE4MDA5MDUxMjh9.Mc6f_AwPBLRQDMLdByhzQKmbL2MXapF7DhUKYjSTpTI
+

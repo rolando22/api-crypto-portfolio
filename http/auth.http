@@ -1,0 +1,22 @@
+POST http://localhost:3004/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "firstName": "Juan",
+	"lastName": "Perez",
+	"email": "juanperez@gmail.com",
+	"password": "1234"
+}
+
+###
+POST http://localhost:3004/api/v1/auth/login
+Content-Type: application/json
+
+{
+	"email": "juanperez@gmail.com",
+	"password": "1234"
+}
+
+###
+GET http://localhost:3004/api/v1/auth/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzE0NTA1MTI4LCJleHAiOjE4MDA5MDUxMjh9.Mc6f_AwPBLRQDMLdByhzQKmbL2MXapF7DhUKYjSTpTI

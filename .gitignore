@@ -1,0 +1,7 @@
+node_modules
+
+.vscode
+dist
+postgres_data
+.env
+package-lock.json
