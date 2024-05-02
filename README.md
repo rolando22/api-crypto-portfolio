@@ -1,6 +1,6 @@
 # Instrucciones
 
-Crear un archivo .env en la raíz del proyecto siguiendo de ejemplo el archivo .env.template
+Crear un archivo .env en la raíz del proyecto siguiendo de ejemplo el archivo .env.example
 
 ```
   PORT=3001
